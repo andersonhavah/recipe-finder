@@ -5,14 +5,14 @@ A responsive, modular web app built with HTML, CSS, and Vanilla JS. Uses TheMeal
 
 ## Features
 - Keyword search for recipes (TheMealDB)
-- Filters: cuisine, category, dietary inference
+- Filters: cuisine, category
 - Recipe detail view with ingredients and instructions
 - Favorites persisted in `localStorage`
 - Weekly meal plan persisted in `localStorage`
-- Shopping list generation (basic consolidation)
+- Shopping list generation
 - Random recipe ("Surprise Me!")
-- Advanced CSS: transitions, hover effects, card flip
-- Multiple events: clicks, form submit, change, delegated events, DOMContentLoaded
+- Advanced CSS: transitions, hover effects
+- Multiple events: clicks, change, delegated events, DOMContentLoaded
 
 ## Setup
 1. Serve the folder via a static server (e.g., `npx http-server`, `live server`).
