@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder & Meal Planner - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" id="logo-wrapper">
+                <div class="logo">Recipe Finder</div>
+            </a>
+            <nav>
+                <a href="index.html" class="nav-btn active">Home</a>
+                <a href="meal-planner.html" class="nav-btn">Meal Plan</a>
+                <a href="favorites.html" class="nav-btn">Favorites</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <div class="search-section">
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search for recipes (e.g., chicken, pasta, curry...)">
+                <button class="btn" id="searchBtn">Search</button>
+                <button class="btn btn-secondary" id="randomBtn">Surprise Me!</button>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="categoryFilter">Category</label>
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="areaFilter">Cuisine</label>
+                    <select id="areaFilter">
+                        <option value="">All Cuisines</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Loading delicious recipes...</p>
+    </div>
+
+    <!-- Recipes Grid -->
+    <div class="recipes-grid" id="recipesGrid"></div>
+
+    <!-- Recipe Detail View -->
+    <div id="recipeDetail" class="recipe-detail"></div>
+
+    <!-- Add to Meal Plan Modal -->
+    <div class="modal" id="mealPlanModal">
+        <div class="modal-content">
+            <h3>Add to Meal Plan</h3>
+            <div class="filter-group">
+                <label for="daySelect">Select Day</label>
+                <select id="daySelect">
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                </select>
+            </div>
+            <div class="filter-group" style="margin-top: 1rem;">
+                <label for="mealTypeSelect">Meal Type</label>
+                <select id="mealTypeSelect">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn" id="confirmAddMealBtn">Add</button>
+                <button class="btn back-btn" id="cancelMealBtn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+    <!-- Load JavaScript Modules -->
+    <script type="module" src="src/js/app.js"></script>
+</body>
+
+</html>

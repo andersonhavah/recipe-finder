@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder & Meal Planner - Meal Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" id="logo-wrapper">
+                <div class="logo">Recipe Finder</div>
+            </a>
+            <nav>
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="meal-planner.html" class="nav-btn active">Meal Plan</a>
+                <a href="favorites.html" class="nav-btn">Favorites</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Loading Spinner -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <p>Loading meal plan...</p>
+    </div>
+
+    <!-- Meal Planner View -->
+    <div class="meal-planner">
+        <div class="planner-header">
+            <h2>Weekly Meal Plan</h2>
+            <button class="btn" id="generateShoppingListBtn">Generate Shopping List</button>
+        </div>
+        <div class="meal-grid" id="mealGrid"></div>
+        <div class="shopping-list" id="shoppingList" style="display: none;"></div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+    <!-- Load JavaScript Modules -->
+    <script type="module" src="src/js/mealPlanner.js"></script>
+</body>
+
+</html>
