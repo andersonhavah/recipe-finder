@@ -10,7 +10,7 @@
     --bg-light: #F5F5F5;
     --card-bg: #FFFFFF;
     --text-dark: #333333;
-    --text-light: #666666;
+    --text-light: #4D4D4D;
     --primary-hover: #45a049;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -60,9 +60,14 @@ header {
     gap: 0.5rem;
 }
 
+#logo-wrapper {
+    text-decoration: none;
+    color: white;
+}
+
 .logo::before {
     content: "🍳";
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 nav {
@@ -71,7 +76,7 @@ nav {
 }
 
 .nav-btn {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--primary-green);
     border: 2px solid white;
     color: white;
     padding: 0.6rem 1.2rem;
