@@ -22,7 +22,7 @@ export const StorageManager = {
      */
     getFavorites() {
         try {
-            const favorites = localStorage.setItem('favorites');
+            const favorites = localStorage.getItem('favorites');
             return favorites ? JSON.parse(favorites) : [];
         } catch (error) {
             console.error('Error loading favorites:', error);
