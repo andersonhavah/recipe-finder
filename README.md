@@ -118,13 +118,13 @@ The application follows a **modular architecture** with separation of concerns:
 │           UI Layer (HTML)               │
 ├─────────────────────────────────────────┤
 │      Application Layer (app.js,         │
-│      favHandler.js, mealPlanner.js)    │
+│      favHandler.js, mealPlanner.js)     │
 ├─────────────────────────────────────────┤
 │        Service Layer                    │
-│  ┌─────────────────────────────────┐   │
-│  │  UIManager  │  StorageManager   │   │
-│  │  RecipeService │ Utils          │   │
-│  └─────────────────────────────────┘   │
+│   ┌─────────────────────────────────┐   │
+│   │  UIManager  │  StorageManager   │   │
+│   │  RecipeService │ Utils          │   │
+│   └─────────────────────────────────┘   │
 ├─────────────────────────────────────────┤
 │      API Layer (APIHandler)             │
 ├─────────────────────────────────────────┤
